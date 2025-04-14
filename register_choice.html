@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Choice - Capstone Management Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Register As</h2>
+        <form action="{{ url_for('register_student') }}" method="GET">
+            <button type="submit">Student</button>
+        </form>
+        <form action="{{ url_for('register_teacher') }}" method="GET">
+            <button type="submit">Teacher</button>
+        </form>
+        <form action="{{ url_for('register_admin') }}" method="GET">
+            <button type="submit">Admin</button>
+        </form>
+    </div>
+</body>
+</html>
